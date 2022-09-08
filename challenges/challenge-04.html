@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+     This example used named areas to place elements 
+     on the grid 
+   -->
+  
+  <h1>Example</h1>
+  
+  <!-- Grid Container -->
+  <div class="container">
+  
+    <div class="box a"></div>
+    <div class="box b"></div>
+    <div class="box c"></div>
+    <div class="box d"></div>
+    <div class="box e"></div>
+    <div class="box f"></div>
+    <div class="box g"></div>
+  
+  </div>
+  
+  
+  <style>
+    /* Your styles here */
+  
+    .container {
+      display: grid;
+      height: 500px;
+      grid-template-columns: (6, 1fr);
+      grid-gap: 1rem;
+      grid-template-areas: "h h h h h h"
+                            "o o y y p p"
+                            "b b b b p p"
+                            "b b b b p p"
+                            "f f f d d d";
+    }
+  
+  
+  
+    /* Some default styles to get you started */
+  
+  
+  
+    .a {
+      grid-area: h;
+      background-color: #ea5050;
+    }
+  
+    .b {
+      grid-area: o;
+      background-color: #e3ac45;
+    }
+  
+    .c {
+      grid-area: y;
+      background-color: #e8e255;
+    }
+  
+    .d {
+      grid-area: b;
+      background-color: #50afe2;
+    }
+  
+    .e {
+      grid-area: p;
+      background-color: #b567f6;
+    }
+  
+    .f {
+      grid-area: f;
+      background-color: #58d848;
+    }
+  
+    .g {
+      grid-area: d;
+      background-color: #2b9b16;
+    }
+  
+    
+  </style>
+
+</body>
+</html>
